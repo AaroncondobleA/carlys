@@ -319,7 +319,7 @@
                     <audio controls>
                         <source src="audio.mp3" type="audio/mpeg">
                         Tu navegador no soporta el elemento de audio.
-                    </audo>
+                    </audio>
                 </div>
 
                 <div class="signature">
@@ -350,7 +350,7 @@
         const musica = document.getElementById('musica-fondo');
 
         btnIniciar.addEventListener('click', () => {
-            musica.play().catch(e => console.log("Audio reproducido correctamente tras interacción"));
+            musica.play().catch(e => console.log("Error al reproducir audio:", e));
             pantallaInicio.style.display = 'none';
             regaloCarlys.style.display = 'block';
             inicializarParticulas();
@@ -431,5 +431,4 @@
         }
     </script>
 </body>
-    </html>
-    
+        </html>
