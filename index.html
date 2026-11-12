@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Carlys ✨</title>
+    <!-- Fuentes optimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- tsParticles SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <!-- Estilos separados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pantalla de inicio para desbloquear audio y rendimiento -->
+    <div id="pantalla-inicio">
+        <div id="texto-introduccion">He preparado algo especial para ti, Carlys ✨</div>
+        <button id="btn-iniciar" type="button">Toca aquí para abrirlo 💗</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="regalo-carlys" class="contenido-regalo">
+        <div id="tsparticles-dust"></div>
+        <div id="tsparticles-flowers"></div>
+
+        <audio id="musica-fondo" src="mai.mp3" loop preload="auto"></audio>
+
+        <div class="header-title">
+            <h1>CARLYS, I WANT YOU <span class="heart">💗</span></h1>
+        </div>
+
+        <div class="main-layout">
+            <!-- Tarjeta de la Carta -->
+            <div class="card-carta">
+                <div class="subtitle">Una pequeña nota para ti</div>
+                <h2 class="carta-titulo">Para Carlys <span class="heart">💗</span></h2>
+
+                <div class="letter-content">
+                    "Desde el primer día que te dije 'me gustas' sentí algo que jamás había sentido, algo de felicidad con misterio, el misterio de saber si yo te gustaba a tí, pero al pasar del tiempo hasta ahora me doy cuenta que soy la persona más afortunada en tenerte conmigo siempre, yo quiero que te cases conmigo cuando seamos adultos, eres la persona que más amo en el mundo Carlys, la que abrazo, la que le doy besos, la que te digo 'Te amo' y de verdad quiero que siga siendo así hasta que de mi último respiro en este planeta, es una forma simple de decirte lo mucho que te amo..."
+                </div>
+
+                <div class="audio-section">
+                    <p>🎧 Un mensajito de voz para ti</p>
+                    <audio id="audio-voz" controls preload="metadata">
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+
+                <div class="signature">
+                    Por siempre tuyo ✨
+                </div>
+            </div>
+
+            <!-- Galería / Esfera 3D -->
+            <div class="seccion-esfera">
+                <div id="contenedor-esfera">
+                    <div class="esfera">
+                        <img src="f1.webp" class="foto-esfera" style="--i: 1;" alt="Foto 1">
+                        <img src="f2.webp" class="foto-esfera" style="--i: 2;" alt="Foto 2">
+                        <img src="f3.webp" class="foto-esfera" style="--i: 3;" alt="Foto 3">
+                        <img src="f2.webp" class="foto-esfera" style="--i: 4;" alt="Foto 4">
+                        <img src="f5.webp" class="foto-esfera" style="--i: 5;" alt="Foto 5">
+                        <img src="f2.webp" class="foto-esfera" style="--i: 6;" alt="Foto 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script separado -->
+    <script src="script.js"></script>
+</body>
+      </html>
